@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: Poppins,sans-serif;
+    color: #222;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+a:hover{
+    color:#222;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(187, 187, 187, 0.15);
+    border: 18px solid white;
+    border-radius: 25px;
+}
+
+/* Section 1 */
+
+
+/* Navbar */
+nav{
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+}
+
+.page-links {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.active{
+    position: relative;
+}
+ .active::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    height: 5px;
+    background: #FFAA55;
+    border-radius: 20px;
+}
+
+
+.button{
+    background: #6021A3;
+    border-radius: 30px;
+    border: none;
+    padding: 12px 24px;
+    color:white;
+}
+
+.button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* Header */
+
+header{
+    width: 90%;
+    margin:0 auto;
+    height: 70vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;    
+}
+
+.right-section{
+    padding-top: 20px;
+    margin-left: 1em;
+}
+
+.title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 52px;
+    color: #222222;
+    padding-bottom: 20px;
+}
+
+.list-item {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.list-item::before {
+    content: "";
+    background-color: #FFAA55;
+    font-weight: bold;
+    display: inline-block; 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+.button-video{
+  padding-top: 30px;  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.video{
+    margin-left: 13%;
+    display: flex;
+    align-items: center;
+}
+
+.video img {
+    margin-right: 4px;
+}
+
+/* Mouse Section */
+
+.mouse-section{
+    text-align: center;
+    position: relative;
+    height: 10vh;
+}
+
+.mouse-section::after{
+    position: absolute;
+    content: url('../images/mouse_vector.png');
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    animation: mouseVector 3s linear infinite;
+}
+
+@keyframes mouseVector {
+    0%{opacity: 1;top: -15%;}
+    25%{opacity: 0.75;top: -10%;}
+    50%{opacity: 0.5;top: -5%;}
+    75%{opacity: 0.75;top: -10%;}
+    100%{opacity: 1;top: -15%;}
+}
+
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.off-toggler{
+    width: 10px;
+    height: 10px;
+    background-color: #C0C0C0;;
+    border-radius: 10px;
+    margin: 11px 4px;
+}
+
+.on-toggler{
+    width: 40px;
+    height: 10px;
+    background-color: #6021A3;
+    border-radius: 5px;
+    margin: 11px 4px;
+}
+
+.building{
+    width: 80%;
+}
+
+/* End of Section 1 */
+
+/* Section 2 */
+
+.title_2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+.text-section_2{
+    width: 80%;
+    height: 70vh;
+    padding-top: 20px;
+}
+
+/* End of Section 2 */
+
+/* Section 3 */
+
+.text-section_3 {
+    width: 70%;
+    margin: auto;
+}
+
+.info-left, .info-right{
+    margin: 30px auto;
+}
+
+.info-left{
+    float: left;
+}
+
+.info-right{
+    float: right;
+}
+
+.info-name{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 52px;
+}
+
+.info-adress{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 37px;
+}
+
+
